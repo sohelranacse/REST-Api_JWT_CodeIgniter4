@@ -47,7 +47,7 @@ $routes->post('reGenToken', 'API/Token::reGenToken');
 $routes->get('client', 'Client::index', ['filter' => 'auth']);
 $routes->post('client', 'Client::store', ['filter' => 'auth']);
 $routes->get('client/(:num)', 'Client::show/$1', ['filter' => 'auth']);
-$routes->put('client/(:num)', 'Client::update/$1', ['filter' => 'auth']);
+$routes->post('client/(:num)', 'Client::update/$1', ['filter' => 'auth']);
 $routes->delete('client/(:num)', 'Client::destroy/$1', ['filter' => 'auth']);
     
 /*
